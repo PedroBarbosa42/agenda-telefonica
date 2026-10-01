@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Agenda Telefônica</title>
+</head>
+<body>
+  <nav>
+    <a href="{{ url_for('listar') }}">Contatos</a> |
+    <a href="{{ url_for('cadastrar') }}">Novo contato</a>
+  </nav>
+  <hr>
+  {% block conteudo %}{% endblock %}
+</body>
+</html>

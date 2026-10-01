@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<h1>{{ contato.nome }}</h1>
+<p>Telefone: {{ contato.telefone }}</p>
+<p>E-mail: {{ contato.email or "—" }}</p>
+<a href="{{ url_for('listar') }}">Voltar</a>
+{% endblock %}

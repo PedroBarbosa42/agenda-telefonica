@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<h1>Novo contato</h1>
+<form method="post">
+  <p><label>Nome: <input name="nome" required></label></p>
+  <p><label>Telefone: <input name="telefone" required></label></p>
+  <p><label>E-mail: <input name="email" type="email"></label></p>
+  <button type="submit">Salvar</button>
+</form>
+{% endblock %}

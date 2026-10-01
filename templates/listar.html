@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<h1>Contatos</h1>
+{% if contatos %}
+<ul>
+  {% for c in contatos %}
+  <li><a href="{{ url_for('consultar', contato_id=c.id) }}">{{ c.nome }}</a> — {{ c.telefone }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Nenhum contato cadastrado.</p>
+{% endif %}
+{% endblock %}
